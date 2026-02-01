@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Favorite Person</title>
+    <title>For Vaishuu</title>
     <style>
         :root {
             --pink-light: #fce4ec;
@@ -14,7 +14,6 @@
 
         body {
             background: var(--pink-light);
-            /* This creates the kiss pattern background seen in your screenshots */
             background-image: linear-gradient(to bottom, rgba(252, 228, 236, 0.8), rgba(248, 187, 208, 0.8)), 
                               url('https://www.transparenttextures.com/patterns/kiss.png');
             font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -25,7 +24,6 @@
             min-height: 100vh;
         }
 
-        /* Navigation Tabs at the top */
         .navbar {
             display: flex;
             flex-wrap: wrap;
@@ -40,7 +38,6 @@
         .navbar span { color: #888; cursor: pointer; padding: 2px 5px; }
         .navbar span.active { color: var(--dark-pink); border-bottom: 2px solid var(--dark-pink); }
 
-        /* Main Card Container */
         .card {
             background: rgba(255, 255, 255, 0.85);
             width: 90%;
@@ -89,13 +86,12 @@
         <span onclick="goTo(7)">P7</span> <span onclick="goTo(8)">P8</span>
         <span onclick="goTo(9)">P9</span> <span onclick="goTo(10)">P10</span>
         <span onclick="goTo(11)">P11</span> <span onclick="goTo(12)">P12</span>
-        <span onclick="goTo(13)">P13</span> <span onclick="goTo(14)">P14</span>
-        <span onclick="goTo(15)">P15</span>
+        <span onclick="goTo(13)">P13</span>
     </div>
 
     <div id="p1" class="card">
         <img src="https://media.tenor.com/bWUeVRqW9-IAAAAi/fast-cat-cat-excited.gif" class="sticker">
-        <h2>Hey! I made something for you...</h2>
+        <h2>Hey Vaishuu! I made something for you...</h2>
         <p>Do you wanna see???</p>
         <button onclick="startExperience()">Yes</button>
     </div>
@@ -112,12 +108,12 @@
     <div id="p3" class="card hidden">
         <img src="https://media.tenor.com/3Yml0nL4aBwAAAAi/cosytales-love.gif" class="sticker">
         <h2>THAT'S LIKE MY GIRL! ❤️</h2>
-        <button onclick="goTo(4)">Next</button>
+        <button onclick="goTo(4)">Open Your Gifts</button>
     </div>
 
-   <div id="p4" class="card hidden">
+    <div id="p4" class="card hidden">
         <h2>YAYAYAYAYAY MY KUCHU PUCHU</h2>
-        <p>You have 3 gifts to open! Open them all! ❤️</p>
+        <p>Vaishuu, you have 3 gifts to open! Open them all! ❤️</p>
         <div class="gift-container">
             <div class="gift-box" onclick="goTo(5)">🎁</div>
             <div class="gift-box" onclick="goTo('5b')">🎁</div>
@@ -128,16 +124,16 @@
     </div>
 
     <div id="p5" class="card hidden">
-        <img src="https://media.tenor.com/sLP3Cb89LBcAAAAi/tulip-flower.gif">
+        <img src="https://media.tenor.com/sLP3Cb89LBcAAAAi/tulip-flower.gif" class="sticker">
         <h3>A Virtual Bouquet!</h3>
-        <p>Beautiful flowers for a beautiful girl.</p>
+        <p>Beautiful flowers for the most beautiful girl, Vaishuu.</p>
         <button onclick="goTo(4)">Back to Gifts 🎁</button>
     </div>
 
     <div id="p5b" class="card hidden">
-        <img src="https://media1.tenor.com/m/ZWnVRfAnxOcAAAAC/miss-you.gif">
+        <img src="https://media1.tenor.com/m/ZWnVRfAnxOcAAAAC/miss-you.gif" class="sticker">
         <h3>Giant Hugs!</h3>
-        <p>Sending you the biggest squeeze ever.</p>
+        <p>Sending you the biggest squeeze ever, Vaishuu.</p>
         <button onclick="goTo(4)">Back to Gifts 🎁</button>
     </div>
 
@@ -147,32 +143,60 @@
         <p>Mwah! Mwah! Mwah!</p>
         <button onclick="goTo(4)">Back to Gifts 🎁</button>
     </div>
+
     <div id="p6" class="card hidden">
         <div class="certificate">
             <h3>CERTIFICATE OF MY LOVE</h3>
-            <p>PRESENTED TO: <b>[vaishuu]</b></p>
+            <p>PRESENTED TO: <b>Vaishuu</b></p>
             <p>For being the best girlfriend, my safe place, and my biggest smile.</p>
         </div>
         <button onclick="goTo(7)">Next Page</button>
     </div>
 
-    <div id="p7" class="card hidden"><h2>Memory #1</h2><p>Remember when we first met?</p><button onclick="goTo(8)">Next</button></div>
-    <div id="p8" class="card hidden"><h2>Memory #2</h2><p>Our favorite inside joke...</p><button onclick="goTo(9)">Next</button></div>
-    <div id="p9" class="card hidden"><h2>Memory #3</h2><p>That one special night.</p><button onclick="goTo(10)">Next</button></div>
-    <div id="p10" class="card hidden"><h2>Memory #4</h2><p>I love your smile.</p><button onclick="goTo(11)">Next</button></div>
-    <div id="p11" class="card hidden"><h2>Memory #5</h2><p>Our future together.</p><button onclick="goTo(12)">Next</button></div>
-    <div id="p12" class="card hidden"><h2>Memory #6</h2><p>You make everything better.</p><button onclick="goTo(13)">Next</button></div>
-    <div id="p13" class="card hidden"><h2>Memory #7</h2><p>I'm so lucky to have you.</p><button onclick="goTo(14)">Next</button></div>
-    <div id="p14" class="card hidden"><h2>Almost There...</h2><p>One final surprise left.</p><button onclick="goTo(15)">Read My Letter</button></div>
+    <div id="p7" class="card hidden">
+        <h2>Remember when we first met, Vaishuu?</h2>
+        <p>It feels like it was just yesterday...</p>
+        <button onclick="goTo(8)">Next</button>
+    </div>
 
-    <div id="p15" class="card hidden">
-        <h2>My Dearest Kuchu Puchu,</h2>
+    <div id="p8" class="card hidden">
+        <h2>That one special night.</h2>
+        <p>I still think about how happy we were.</p>
+        <button onclick="goTo(9)">Next</button>
+    </div>
+
+    <div id="p9" class="card hidden">
+        <h2>I love your smile so much.</h2>
+        <p>It's my favorite thing in the whole world.</p>
+        <button onclick="goTo(10)">Next</button>
+    </div>
+
+    <div id="p10" class="card hidden">
+        <h2>Our future together.</h2>
+        <p>I can't wait to see what happens next with you.</p>
+        <button onclick="goTo(11)">Next</button>
+    </div>
+
+    <div id="p11" class="card hidden">
+        <h2>I'm so lucky to have you.</h2>
+        <p>Thank you for choosing me every day.</p>
+        <button onclick="goTo(12)">Next</button>
+    </div>
+    
+    <div id="p12" class="card hidden">
+        <h2>Almost There...</h2>
+        <p>One final surprise for Vaishuu.</p>
+        <button onclick="goTo(13)">Read My Letter</button>
+    </div>
+
+    <div id="p13" class="card hidden">
+        <h2>My Dearest Vaishuu,</h2>
         <p style="text-align: left; line-height: 1.6;">
-           heyy!! vaishuu
+            heyy!! vaishuu
           well u saw everything alr hehehe i hope u loved it and i js wannna say that talking to u feels very special infact you are special to me
           and i love ur smile, i love what u do, i love for what u are, i love u for being honest with me, ur the sweetest girl i have ever talked to and what i feel for u 
           is something even I dont know but i would love to find out more abt u and spend my time with u and i wish we stay together forever 
-          your lover!!
+          your lover
           ayush
         </p>
         <img src="https://media.tenor.com/7o-cN8ifTd4AAAAi/love.gif" width="100">
@@ -183,20 +207,13 @@
         const music = document.getElementById('bgMusic');
 
         function startExperience() {
-            music.play().catch(e => console.log("Audio play blocked until interaction."));
+            music.play().catch(e => console.log("Music blocked."));
             goTo(2);
         }
 
         function goTo(pageNum) {
-            // Hides all cards
             document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
-            // Shows the selected card (even if it's 5b or 5c)
             document.getElementById('p' + pageNum).classList.remove('hidden');
-            
-            // Updates the navbar highlight
-            document.querySelectorAll('.navbar span').forEach((span, index) => {
-                span.classList.remove('active');
-            });
         }
 
         function moveNo() {
